@@ -17,9 +17,9 @@ int i = (int) d1;   //Manually converting to int
 
 System.out.println(i);
 
-int b = 257;
+int b = 254;
 
-byte c = (byte) b;   // output will be 1 because of modular arithmetic
+byte c = (byte) b;   // output will be -2 because it fits in a byte range (-128 to 127)
 
 System.out.println(c);
 
