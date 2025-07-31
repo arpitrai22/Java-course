@@ -35,6 +35,8 @@ public static void main(String[] args) {
 
     */
 
+    /* 
+
     // Using switch expression for more concise code
     // This requires Java 12 or later
 
@@ -47,6 +49,23 @@ public static void main(String[] args) {
         case "friday" -> result = "It's Friday!";
         default -> result = "Invalid day";
     }
+    */
+
+    // More concise switch expression
+
+    // This requires Java 12 or later
+    // Using switch expression for more concise code
+
+    
+    result = switch (day.toLowerCase()) {
+        case "saturday", "sunday" -> "It's the weekend!";
+        case "monday" -> "Start of the work week!";
+        case "tuesday" -> "It's Tuesday!";
+        case "wednesday" -> "It's Wednesday!";
+        case "thursday" -> "It's Thursday!";
+        case "friday" -> "It's Friday!";
+        default -> "Invalid day";
+    };
 
     System.out.println(result);
 
