@@ -7,7 +7,7 @@ public static void main(String[] args) {
 
 
 
-    int day = 3;        // Example day of the week (1-7)
+    int day = 3;       
     
     switch (day) {
         case 1:
@@ -34,6 +34,8 @@ public static void main(String[] args) {
         default:
             System.out.println("Invalid day");
     }
+
+
   } 
 
 
