@@ -7,6 +7,12 @@ public class relationaloperators {
 
     //Relational operators
     System.out.println("is a = b: " + (a == b));  //false
+    System.out.println("is a!= b: " + (a != b)); //True
+    System.out.println(" is a > b: " + ( a > b ) );  //false
+    System.out.println("is a < b: " + ( a < b ) );  //True
+    System.out.println(" is a >= b: " + ( a >= b ) );  //false
+    System.out.println("is a <= b: " + ( a <= b ) );  //True
+
 
     
    }
