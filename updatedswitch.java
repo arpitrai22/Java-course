@@ -56,7 +56,9 @@ public static void main(String[] args) {
     // This requires Java 12 or later
     // Using switch expression for more concise code
 
-    
+    /* 
+
+
     result = switch (day.toLowerCase()) {
         case "saturday", "sunday" -> "It's the weekend!";
         case "monday" -> "Start of the work week!";
@@ -65,6 +67,20 @@ public static void main(String[] args) {
         case "thursday" -> "It's Thursday!";
         case "friday" -> "It's Friday!";
         default -> "Invalid day";
+    };
+
+    */
+
+    //If we don't want to use arrow syntax, we can use yield statement
+
+    result = switch (day.toLowerCase()) {
+        case "saturday", "sunday" : yield "It's the weekend!";
+        case "monday" : yield "Start of the work week!";
+        case "tuesday" : yield "It's Tuesday!";
+        case "wednesday" : yield "It's Wednesday!";
+        case "thursday" : yield "It's Thursday!";
+        case "friday" : yield "It's Friday!";
+        default : yield "Invalid day";
     };
 
     System.out.println(result);
