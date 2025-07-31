@@ -40,7 +40,7 @@ System.out.println("a is not greater than b");
 
   else if ( a < b ) {
 
-     System.out.println("a is less than b");
+   System.out.println("a is less than b");
 
   }
 
