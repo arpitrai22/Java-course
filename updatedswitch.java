@@ -8,26 +8,53 @@ public static void main(String[] args) {
     System.out.print("Enter the day of the week: ");
     String day = scanner.nextLine();
 
+    String result = "";
+
+
+    /* Convert the day to lowercase for case-insensitive comparison 
+    day = day.toLowerCase();
+
     switch (day) {
 
-      case "Saturday" , "Sunday" -> System.out.println("It's the weekend!");
+      case "saturday", "sunday" -> System.out.println("It's the weekend!");
 
-      case "Monday" -> System.out.println("Start of the work week!");
+      case "monday" -> System.out.println("Start of the work week!");
 
-      case "Tuesday" -> System.out.println("It's Tuesday!");
+      case "tuesday" -> System.out.println("It's Tuesday!");
 
-      case "Wednesday" -> System.out.println("It's Wednesday!");
+      case "wednesday" -> System.out.println("It's Wednesday!");
 
-      case "Thursday" -> System.out.println("It's Thursday!");
+      case "thursday" -> System.out.println("It's Thursday!");
 
-      case "Friday" -> System.out.println("It's Friday!");
+      case "friday" -> System.out.println("It's Friday!");
 
       default -> System.out.println("Invalid day");
 
 
     }
 
-    scanner.close();
+    */
+
+    // Using switch expression for more concise code
+    // This requires Java 12 or later
+
+    switch (day.toLowerCase()) {
+        case "saturday", "sunday" -> result = "It's the weekend!";
+        case "monday" -> result = "Start of the work week!";
+        case "tuesday" -> result = "It's Tuesday!";
+        case "wednesday" -> result = "It's Wednesday!";
+        case "thursday" -> result = "It's Thursday!";
+        case "friday" -> result = "It's Friday!";
+        default -> result = "Invalid day";
+    }
+
+    System.out.println(result);
+
+    // Close the scanner to prevent resource leaks
+    if (scanner != null) 
+
+        scanner.close();
+  
 
   }
 
