@@ -8,7 +8,7 @@ class WhileExample {
 
         // Loop until i is less than or equal to 5
 
-        while (i <= 5) {
+        while (i <= 5) {  //In while loop, for any true condition, the loop will execute
 
             System.out.println("i is: " + i);
 
