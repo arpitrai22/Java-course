@@ -13,9 +13,9 @@ public class DoWhile {
             System.out.println(i);  // Print the current value of i
 
             i++;  // Increment i by 1
-
-        } while (i >= 5);  // Loop will execute while i is less than or equal to 5
-
+          
+        } while (i <= 5);  // Loop will execute while i is less than or equal to 5
+        
 
     }
 
