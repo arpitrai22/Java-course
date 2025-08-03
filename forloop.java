@@ -19,6 +19,13 @@ public class forloop {
 
         
     }
+
+    for (int k = 1; k <= 5; k++) {  // Another loop that prints numbers from 1 to 5
+            System.out.println("Another loop: " + k);  // Print the current value of k
+        }
+
+        System.out.println("End of loops");  // Indicate the end of the loops
+
 }
 
 }
